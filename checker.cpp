@@ -10,7 +10,7 @@ bool is_resprateokay(float respRate)
 {
   return !(respRate < 30 || respRate > 95);}
 bool vitalsAreOk(float bpm, float spo2, float respRate) {
-  return (is_bpmokay)&&(is_spo2okay)&&(is_resprateokay);
+  return (is_bpmokay(bpm))&&(is_spo2okay(spo2)&&(is_resprateokay(respRate);
 }
 
 int main() {
